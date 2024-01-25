@@ -1,4 +1,4 @@
-numbers = [45, 90, 120, 180, 200, 550, 30, 160]
+numbers = [10, 70, 120, 180, 200, 340, 600, 750]
 
 for number in numbers:
     if number > 500:
