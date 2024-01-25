@@ -1,0 +1,3 @@
+string_to_split = "Nguyen-Huy-Nam"
+result = string_to_split.split('-')
+print(result)
