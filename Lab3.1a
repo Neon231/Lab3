@@ -1,0 +1,8 @@
+def calculate_sum(n):
+    return n * (n + 1) // 2
+
+number = int(input("Enter a number: ")
+
+sum_result = calculate_sum(number)
+
+print(f"The sum from 1 to {number} is: {sum_result}")
