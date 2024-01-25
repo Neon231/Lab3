@@ -1,0 +1,4 @@
+my_list = ["watermelon", "", "banana", "orange", "", "pea"]
+
+result_list = list(filter(None, my_list))
+print(result_list)
