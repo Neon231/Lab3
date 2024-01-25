@@ -1,0 +1,14 @@
+def are_anagrams(str1, str2):
+    str1_clean = ''.join(char.lower() for char in str1 if char.isalnum())
+    str2_clean = ''.join(char.lower() for char in str2 if char.isalnum())
+
+    return sorted(str1_clean) == sorted(str2_clean)
+
+string1 = "parliament"
+string2 = "partial men"
+result = are_anagrams(string1, string2)
+
+if result:
+    print(f"{string1} and {string2} are anagrams.")
+else:
+    print(f"{string1} and {string2} are not anagrams.")
