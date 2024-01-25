@@ -1,0 +1,17 @@
+def hex_to_decimal(hex_string):
+    try:
+        decimal_value = int(hex_string, 16)
+        return decimal_value
+    except ValueError:
+        return None
+
+user_input = input("Enter a string: ")
+
+if all(char.isdigit() or char.lower() in 'abcdef' for char in user_input):
+    decimal_value = hex_to_decimal(user_input)
+    if decimal_value is not None:
+        print("The base-10 value is: {decimal_value}")
+    else:
+        print("Error: Error hexadecimal format.")
+else:
+    print("Error: Input contains no hexadecimal characters.")
