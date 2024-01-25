@@ -1,0 +1,9 @@
+numbers = [45, 90, 120, 180, 200, 550, 30, 160]
+
+for number in numbers:
+    if number > 500:
+        break  # Stop the loop if the number is greater than 500
+    if number > 150:
+        continue  # Skip the number if it's greater than 150
+    if number % 5 == 0:
+        print(number)
